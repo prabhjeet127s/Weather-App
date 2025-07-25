@@ -1,12 +1,50 @@
-# React + Vite
+# 🌤️ Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive weather application built with **React**, **Vite**, and **Tailwind CSS**. It shows real-time weather details like temperature, humidity, wind speed, and condition icon using the OpenWeatherMap API.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔍 Search weather by city
+🌡️ Displays temperature, humidity, and wind speed
+📡 Real-time data using Axios
+⚛️ Built with React + Vite
+💅 Styled with Tailwind CSS
+📱 Fully responsive
+
+
+## 📦 Installation & Setup (All Steps)
+
+1. Clone the repository
+
+2. Install dependencies
+    -npm install
+
+3. Add OpenWeather API Key,
+  Create a .env file in the root of the project (same level as package.json) and add the following line:    
+
+  -VITE_API_KEY=your_openweather_api_key_here.  
+
+  🔐 Note:
+	•	Replace your_openweather_api_key_here with your real key from https://openweathermap.org/api
+	•	The variable must start with VITE_ for Vite to detect it
+	•	The .env file is already listed in .gitignore and will not be pushed to GitHub
+
+4. Start the app
+
+5. npm run dev
+
+
+
+🧠 What I Learned
+	•	Fetching data using Axios
+	•	Managing state in React with useState
+	•	Creating responsive UI with Tailwind CSS
+	•	Using .env to hide API keys
+	•	Fast development setup using Vite
+
+
+👤 Author
+
+Made by Prabhjeet Singh    

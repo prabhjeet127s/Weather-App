@@ -44,14 +44,15 @@ function App() {
 
       
     }
+    setLoading(false);
 
   }
  
   
   return (
     <>
-      <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-br from-blue-800 to-gray-600 text-white">
-        <h1 className="my-12 text-gray-200 font-semibold">Weather App</h1>
+      <div className="flex flex-col items-center border-none justify-center h-screen bg-gradient-to-br from-blue-600 to-gray-400 text-white">
+        <h1 className="my-14 text-gray-200 font-semibold text-4xl">Weather App</h1>
         {/* search bar & icon */}
         <div className="flex items-center bg-white rounded-full px-4 py-2 mb-6 w-80 shadow-lg">
           <input
@@ -83,6 +84,7 @@ function App() {
             : "--"}
         </h1>
         <h2 className="text-2xl mt-2 font-semibold">
+          {cityName || "Search for city to view weather"}
         </h2>
 
         {/* Humadity & Wind Speed */}
@@ -90,14 +92,14 @@ function App() {
           <div className="flex flex-col items-center ">
             <WiHumidity className="text-3xl" />
             <span className="text-lg font-medium">
-              80%
+               {humidity !== null ? `${humidity}%` : "--"}
             </span>
             <p className="text-sm">Humidity</p>
           </div>
           <div className="flex flex-col items-center">
             <WiStrongWind className="text-3xl" />
             <span className="text-lg font-medium">
-            100 km/h
+             {windSpeed !== null ? `${windSpeed}km/h` : "--"}
             </span>
             <p className="text-sm">Wind Speed</p>
           </div>

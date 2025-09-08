@@ -37,7 +37,7 @@ A responsive weather application built with **React**, **Vite**, and **Tailwind 
 
 
 
-🧠 What I Learned
+🧠 What I Learn
 	•	Fetching data using Axios
 	•	Managing state in React with useState
 	•	Creating responsive UI with Tailwind CSS
